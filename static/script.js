@@ -127,15 +127,15 @@ document.addEventListener('DOMContentLoaded', () => {
         return { finishNow: stopNow };
     }
 
-    /* ---------- Send Message ---------- */
-    function sendMessage() {
+        /* ---------- Send Message ---------- */
+        function sendMessage() {
         const message = userInput.value.trim();
         if (!message) return;
 
         appendMessage(message, 'user');
         userInput.value = '';
 
-        // Add a visible typing indicator
+        // Show Typing Indicator
         const { messageDiv } = appendMessage('', 'bot', true);
 
         fetch(CHAT_ENDPOINT, {
@@ -143,33 +143,22 @@ document.addEventListener('DOMContentLoaded', () => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ user_message: message })
         })
-            .then(res => res.json())
-            .then(data => {
-                // Remove any typing indicators safely
-                const typingNodes = document.querySelectorAll('.typing-indicator');
-                typingNodes.forEach(node => node.parentElement?.remove());
+        .then(res => res.json())
+        .then(data => {
+            // Remove any typing indicators safely
+            const typingNodes = document.querySelectorAll('.typing-indicator');
+            typingNodes.forEach(node => node.parentElement?.remove());
 
-                // Create actual bot message
-                const { messageText } = appendMessage('', 'bot');
+            // Append the bot's full message instantly (no typing animation)
+            appendMessage(data.bot_reply || 'No response received.', 'bot');
+        })
+        .catch(err => {
+            const typingNodes = document.querySelectorAll('.typing-indicator');
+            typingNodes.forEach(node => node.parentElement?.remove());
 
-                // Start typewriter effect for the AI reply
-                activeTypeController = typeText(
-                    messageText,
-                    data.bot_reply || 'No response received.',
-                    20
-                );
-                updateSendButton();
-            })
-            .catch(err => {
-                // Remove typing indicators safely
-                const typingNodes = document.querySelectorAll('.typing-indicator');
-                typingNodes.forEach(node => node.parentElement?.remove());
-
-                appendMessage('⚠️ Error: ' + err.message, 'bot');
-                activeTypeController = null;
-                updateSendButton();
-            });
-    }
+            appendMessage('⚠️ Error: ' + err.message, 'bot');
+        });
+        }
 
     /* ---------- Event Listeners ---------- */
     sendButton.addEventListener('click', () => {
