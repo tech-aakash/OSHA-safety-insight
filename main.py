@@ -1,11 +1,13 @@
-# main.py — OSHA Safety Insight with PDF citation support
+# main.py — OSHA Safety Insight with full PDF citation support (fixed URLs + instant answers)
 from flask import Flask, render_template, request, jsonify
 from openai import AzureOpenAI
 from azure.search.documents import SearchClient
 from azure.search.documents.models import VectorizedQuery
 from azure.core.credentials import AzureKeyCredential
 from dotenv import load_dotenv
+import urllib.parse
 import os
+import re
 
 # ------------------------------
 # Load environment variables
@@ -121,20 +123,25 @@ def chat():
         # Step 4: Extract AI response
         bot_reply = response.choices[0].message.content if response.choices else "No response from AI."
 
-        # Step 5: Append citation block for frontend display
+        # Step 5: Append citation block (with encoded URLs)
         if docs:
-            citation_block = "\n\n**References:**\n" + "\n".join(
-                [
-                    f"- [{d['document_name']}, Page {d['page_number']}]({d['sas_url']})"
-                    for d in docs
-                ]
-            )
+            citation_block = "\n\n**References:**\n"
+            for d in docs:
+                sas_url = d.get("sas_url", "")
+                safe_url = urllib.parse.quote(sas_url, safe=':/?&=()%')
+                citation_block += f"- [{d['document_name']}, Page {d['page_number']}]({safe_url})\n"
             bot_reply += "\n" + citation_block
 
-        # Log for debugging
+        # 🧹 Fix any accidental spacing issues breaking markdown links
+        
+        bot_reply = re.sub(r'\]\s+\(', '](', bot_reply)
+
+        return jsonify({"bot_reply": bot_reply})
+
+        # Debug logging
         print("DEBUG → user_input:", user_input)
         print("DEBUG → doc count:", len(docs))
-        print("DEBUG → bot_reply:", bot_reply[:200], "...\n")
+        print("DEBUG → bot_reply:", bot_reply[:250], "...\n")
 
         return jsonify({"bot_reply": bot_reply})
 
