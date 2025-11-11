@@ -10,15 +10,66 @@ body {
   flex-direction: column;
 }
 
-/* Header bar */
-header {
-  background-color: #1565c0;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 1.8rem;
-  font-weight: 600;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+/* ===== HEADER STYLES ===== */
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #2f6fc0; /* OSHA blue */
+  color: #fff;
+  padding: 10px 25px;
+  height: 70px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Logo styling */
+.header-logo {
+  height: 60px;              /* slightly bigger */
+  width: 60px;
+  border-radius: 10px;
+  object-fit: contain;
+  background-color: #ffffff;  /* adds contrast frame */
+  padding: 2px;               /* space inside the white box */
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25); /* soft shadow for depth */
+  transition: transform 0.2s ease-in-out;
+}
+
+.header-logo:hover {
+  transform: scale(1.05);     /* subtle hover zoom effect */
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  color: #fff;
+}
+
+/* ===== RESPONSIVE HEADER ===== */
+@media (max-width: 600px) {
+  .header-bar {
+    height: 60px;
+    padding: 8px 16px;
+  }
+
+  .header-logo {
+    height: 35px;
+    width: 35px;
+  }
+
+  .header-title {
+    font-size: 1.2rem;
+  }
 }
 
 /* Chat page layout */

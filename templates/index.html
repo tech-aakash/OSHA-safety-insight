@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OSHA Safety Insight</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" />
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
 
-  <header>
-    <h1>OSHA Safety Insight</h1>
+  <!-- Header -->
+  <header class="header-bar">
+    <div class="header-left">
+      <img src="{{ url_for('static', filename='images/OSHA_logo.png') }}" 
+           alt="OSHA Logo" class="header-logo" />
+      <span class="header-title">Construction Safety Assistant</span>
+    </div>
   </header>
 
+  <!-- Main Chat Layout -->
   <main class="chat-page">
     <div class="chat-container" id="chat-container"></div>
 
+    <!-- Input Area -->
     <div class="input-container">
-      <input type="text" id="user-input" placeholder="Ask about workplace safety...">
+      <input type="text" id="user-input" placeholder="Ask about workplace safety..." />
       <button class="send-button" id="send-button">➤</button>
     </div>
 
+    <!-- PDF Viewer (Hidden by default) -->
     <div class="pdf-box hidden" id="pdf-box">
       <button class="close-pdf" onclick="closePDF()">✕</button>
-      <iframe id="pdfViewer"></iframe>
+      <iframe id="pdfViewer" allowfullscreen></iframe>
     </div>
   </main>
 
