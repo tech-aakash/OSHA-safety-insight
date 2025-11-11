@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What is the minimum width for a scaffold walkway?",
+    "context": "Each scaffold platform and walkway must be at least 18 inches (46 centimeters) wide.",
+    "answer": "Each scaffold platform and walkway must be at least 18 inches (46 centimeters) wide. Narrower platforms are permitted only when the work area is so small that a wider platform is impractical, and additional fall-protection measures must then be provided."
+  },
+  {
+    "question": "What does OSHA define as a “competent person” in excavation work?",
+    "context": "A competent person can identify hazards and take corrective measures in excavation work.",
+    "answer": "A “competent person” is one who can identify existing and predictable hazards in the surroundings or working conditions that are unsanitary, hazardous, or dangerous to employees and has authorization to take prompt corrective measures to eliminate them. In excavation, this person must be capable of classifying soil, designing protective systems, and conducting required inspections."
+  },
+  {
+    "question": "What is the permissible exposure limit (PEL) for noise in construction?",
+    "context": "OSHA regulates permissible noise levels on construction sites.",
+    "answer": "OSHA sets the permissible exposure limit for noise at a 90 dBA time-weighted average (TWA) over an 8-hour workday. For every 5 dB increase above 90 dBA, the allowable exposure time is cut in half (e.g., 95 dBA → 4 hours; 100 dBA → 2 hours)."
+  },
+  {
+    "question": "What is the maximum allowable slope for a Type C soil trench?",
+    "context": "Trenches in Type C soil must be properly sloped for stability.",
+    "answer": "Trenches in Type C soil may not be excavated at a slope steeper than 1½ horizontal to 1 vertical (34 degrees). Steeper slopes or vertical cuts require protective systems such as trench boxes or shields specifically rated for the conditions."
+  },
+  {
+    "question": "What class of hard hat offers protection from electrical hazards?",
+    "context": "OSHA classifies hard hats based on protection type.",
+    "answer": "A hard hat provides protection against electrical hazards up to 20,000 volts (phase-to-ground). Class G (General) protects up to 2,200 volts, and Class C (Conductive) offers no electrical protection."
+  },
+  {
+    "question": "What are the signage requirements near a trenching operation?",
+    "context": "Employers must use signage to warn about trenching hazards.",
+    "answer": "Employers must use warning signs, barricades, or fencing to mark open excavations and other hazards accessible to workers or the public. Signs must conform to ANSI Z35.1 color and wording standards, be clearly visible, and be placed far enough in advance to give effective warning before a person approaches the hazard."
+  },
+  {
+    "question": "What are the minimum illumination levels required in construction tunnels?",
+    "context": "OSHA specifies lighting requirements for tunnels and shafts.",
+    "answer": "General construction areas, including tunnels and shafts, must be lighted to at least 5 foot-candles. During active operations such as drilling, mucking, or scaling at tunnel headings, illumination must be increased to 10 foot-candles to ensure worker visibility and safety."
+  },
+  {
+    "question": "What are the minimum spacing requirements for cross braces on scaffolds?",
+    "context": "Scaffold cross braces must maintain structural stability.",
+    "answer": "Cross braces must be installed so that the end points are securely attached to the vertical posts and spaced such that the scaffold remains plumb, level, and square. The horizontal distance between cross braces must not exceed the manufacturer’s design; typically this spacing is about 20 to 30 feet horizontally and every 26 feet vertically, but actual limits depend on the scaffold type and load rating."
+  },
+  {
+    "question": "What is the definition of “confined space” in construction?",
+    "context": "Confined spaces have limited entry and are not meant for continuous occupancy.",
+    "answer": "A confined space is any space that (1) is large enough for an employee to enter and perform work, (2) has limited or restricted means for entry or exit, and (3) is not designed for continuous employee occupancy. Examples include tanks, silos, vaults, and deep pits."
+  },
+  {
+    "question": "When is fall protection required for workers on low-slope roofs?",
+    "context": "OSHA defines fall protection requirements for low-slope roofing work.",
+    "answer": "Workers engaged in roofing activities on low-slope roofs with unprotected sides or edges 6 feet (1.8 meters) or more above a lower level must be protected by guardrail systems, safety-net systems, or personal fall-arrest systems. OSHA also allows a warning-line system combined with one of those methods when used under the conditions described in Subpart M."
+  },
+  {
+    "question": "When should a safety harness be inspected?",
+    "context": "Safety harnesses must be regularly inspected for wear or damage.",
+    "answer": "A safety harness must be inspected by the user before each use to ensure there are no visible signs of damage, such as cuts, frays, or worn hardware. Additionally, a competent person must conduct periodic inspections at regular intervals as defined by the employer’s safety program and equipment manufacturer."
+  },
+  {
+    "question": "When should protective systems be installed in excavations?",
+    "context": "Protective systems prevent cave-ins in trenches and excavations.",
+    "answer": "Protective systems must be installed in excavations that are 5 feet (1.5 meters) deep or more, unless the excavation is entirely in stable rock. For shallower excavations, protection is still required if there’s any risk of a cave-in. The system should be in place before any worker enters the trench."
+  },
+  {
+    "question": "How often must trenches be inspected by a competent person?",
+    "context": "Trenches must be inspected to ensure stability and safety.",
+    "answer": "Trenches must be inspected by a competent person daily and as conditions change, such as after rain, vibrations, or other hazards that could compromise trench stability. Inspections should be conducted before any worker enters the trench."
+  },
+  {
+    "question": "How often must cranes be inspected?",
+    "context": "Cranes must undergo frequent inspections for safe operation.",
+    "answer": "Cranes must undergo a daily visual inspection, a monthly documented inspection, and a comprehensive annual inspection by a qualified person. Each inspection type covers different components and is critical to ensure safe operation."
+  },
+  {
+    "question": "How should workers be protected from cave-ins during trenching?",
+    "context": "Trench safety involves various protective systems.",
+    "answer": "Workers must be protected from cave-ins using one or more protective systems such as sloping the trench walls, benching, shoring, or shielding (e.g., trench boxes). The appropriate system depends on soil type, trench depth, and environmental conditions."
+  },
+  {
+    "question": "How does OSHA define “confined space” in construction?",
+    "context": "Definition of confined space as per OSHA regulations.",
+    "answer": "According to OSHA, a confined space in construction is a space that: (1) is large enough for a worker to enter; (2) has limited or restricted means of entry or exit; and (3) is not designed for continuous occupancy. Examples include tanks, vaults, and manholes."
+  },
+  {
+    "question": "How do scaffolds and aerial lifts differ in terms of fall protection?",
+    "context": "OSHA differentiates between scaffold and aerial lift requirements.",
+    "answer": "For scaffolds, fall protection is required at heights of 10 feet or more using guardrails or personal fall arrest systems. For aerial lifts, fall protection is always required, regardless of height, and must include a personal fall arrest system with a lanyard attached to the boom or basket."
+  },
+  {
+    "question": "How should hard hats be worn in construction zones?",
+    "context": "Hard hats must be properly worn to ensure protection.",
+    "answer": "Hard hats must be worn properly with the suspension system in place, facing forward unless manufacturer instructions permit reverse wear. They should sit level on the head, not tilted, and straps or adjustments must be secure. Modifications such as drilling holes or painting are prohibited."
+  },
+  {
+    "question": "How often must safety harnesses be inspected?",
+    "context": "Safety harness inspection frequency and criteria.",
+    "answer": "Safety harnesses must be inspected before each use by the worker and periodically (usually at least annually) by a competent person. The inspection should check for cuts, abrasions, chemical damage, UV degradation, and faulty hardware."
+  },
+  {
+    "question": "Why is eye protection mandatory during welding operations?",
+    "context": "Welding exposes workers to harmful radiation and debris.",
+    "answer": "Welding produces intense ultraviolet and infrared radiation, sparks, and debris that can seriously damage the eyes. Eye protection such as safety goggles or welding helmets with proper filter lenses is mandatory to prevent arc eye, burns, and foreign body injuries."
+  },
+  {
+    "question": "Why must hard hats be worn in construction zones?",
+    "context": "Hard hats protect workers from various head hazards.",
+    "answer": "Hard hats protect workers from head injuries caused by falling or flying objects, bumping into fixed objects, or accidental contact with electrical hazards. OSHA mandates the use of head protection in areas where such hazards exist."
+  },
+  {
+    "question": "Why are GFCIs required on construction sites for power tools?",
+    "context": "GFCIs protect against electrical shock hazards.",
+    "answer": "Ground Fault Circuit Interrupters (GFCIs) are required to protect workers from electric shock by quickly cutting off power when a ground fault is detected. Construction sites often have wet or damp conditions, increasing the risk of electrocution."
+  },
+  {
+    "question": "Why is ventilation important in welding operations inside a confined space?",
+    "context": "Confined space welding can deplete oxygen and release toxic fumes.",
+    "answer": "Welding inside confined spaces produces toxic fumes and depletes oxygen, which can cause asphyxiation or poisoning. Ventilation is critical to ensure adequate oxygen levels and to remove hazardous gases."
+  },
+  {
+    "question": "Is it acceptable to stack bricks more than 7 feet high without restraint?",
+    "context": "Brick stacks must be properly restrained beyond 7 feet.",
+    "answer": "No. Bricks stacked higher than 7 feet must be tapered back at least 2 inches for every additional foot of height. This prevents the stack from collapsing and causing injury."
+  },
+  {
+    "question": "Is training required before operating a scissor lift?",
+    "context": "Only trained personnel may operate scissor lifts safely.",
+    "answer": "Yes. OSHA requires that only trained and authorized personnel operate scissor lifts. Training must include hazard recognition, proper operation, fall protection, and safe work practices."
+  },
+  {
+    "question": "Is daily site inspection required for all excavation work regardless of depth?",
+    "context": "Excavation sites must be inspected daily for safety.",
+    "answer": "Yes. A competent person must inspect excavations, adjacent areas, and protective systems daily before work begins, and as needed throughout the shift, even for shallow trenches, to ensure safety."
+  },
+  {
+    "question": "Are reflective vests mandatory for night work near roadways?",
+    "context": "Visibility is crucial for night roadway work.",
+    "answer": "Yes. Workers exposed to vehicular traffic at night must wear high-visibility, reflective garments to be seen by drivers and equipment operators. This is especially critical for flaggers and roadside crews."
+  },
+  {
+    "question": "Can a scaffold be used if it is partially disassembled?",
+    "context": "Partially disassembled scaffolds may lack critical components.",
+    "answer": "No. A scaffold must not be used if it is partially disassembled and missing critical components such as guardrails, planks, or cross-bracing, as this compromises its structural integrity and worker safety."
+  },
+  {
+    "question": "Can a ladder be used horizontally as a platform?",
+    "context": "Ladders are not designed for horizontal load-bearing.",
+    "answer": "No. Ladders are not designed to support weight in a horizontal position and should never be used as scaffolding planks. Doing so violates manufacturer instructions and OSHA safety rules."
+  },
+  {
+    "question": "Can a trench shield be used in unstable soil conditions?",
+    "context": "Trench shields protect workers in unstable soil when properly designed.",
+    "answer": "Yes, but only if it is designed for the specific soil type and trench depth. The trench shield must be properly installed and used in accordance with manufacturer specifications to ensure worker safety."
+  }
+]
